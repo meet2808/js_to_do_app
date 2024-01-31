@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col items-center">
+      <h1 class="text-3xl font-bold mx-auto mt-5">TO-DO APP</h1>
+      <!-- Div which contain textarea for hold description  -->
+      <div class="mx-auto mt-14">
+        <input
+          type="text"
+          name=""
+          id="todo-content"
+          placeholder="Enter your text"
+          class="border outline-0 border-gray-300 focus:border-indigo-500 w-[700px] h-[40px] rounded-[5px] p-4"
+        />
+        <button
+         id="add-btn"
+          class="transition bg-indigo-500 text-white font-bold hover:bg-white border hover:text-indigo-500 hover:border-indigo-500 outline-0 p-2 w-[100px] rounded-[5px]"
+          onclick="updateData()"
+        >
+          Add
+        </button>
+      </div>
+
+      <!-- To-Do content container -->
+      <div class="grid grid-cols-3 gap-1 mt-3" id="list-container">
+        
+      </div>
+    </div>
+  </body>
+  <!-- <script src="./Data.js"></script> -->
+  <script src="./index.js"></script>
+</html>
